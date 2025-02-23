@@ -13,7 +13,7 @@ const http = require("http");
 const { Server } = require("socket.io");
 
 const PORT = process.env.PORT || 5000;
-const clientorigin = "http://localhost:5173";
+const clientorigin = process.env.CLIENT_ORIGIN;
 
 // Creating the server
 const app = express();
