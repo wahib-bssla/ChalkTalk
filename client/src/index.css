@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@plugin 'tailwind-scrollbar';
+
+
+@keyframes tremble {
+    0% {
+      transform: translate(5px, 0);
+    }
+    25% {
+      transform: translate(-5px, 0);
+    }
+    50% {
+      transform: translate(2px, 0);
+    }
+    75% {
+      transform: translate(-2px, 0);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+  .tremble {
+    animation: tremble 0.3s ease-in-out;
+  }
+  
+  /* For WebKit-based browsers (Chrome, Safari) */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Firefox */
+.hide-scrollbar {
+  scrollbar-width: none;
+}
+
+/* For Internet Explorer and Edge */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+}
