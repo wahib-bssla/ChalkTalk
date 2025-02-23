@@ -14,6 +14,7 @@ const { Server } = require("socket.io");
 
 const PORT = process.env.PORT || 5000;
 const clientorigin = process.env.CLIENT_ORIGIN;
+console.log("CLIENT_ORIGIN:", process.env.CLIENT_ORIGIN);
 
 // Creating the server
 const app = express();
